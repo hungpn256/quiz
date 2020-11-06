@@ -9,11 +9,10 @@ class Quiz extends Component {
     var result = [];
     result = ans.map((val,ind)=>{
       return(
-        <AnswerOption key ={ind} ans = {val} id = {quiz.id} OnNextQuiz={OnNextQuiz}/>
+        <AnswerOption key ={ind} ans = {val} id = {quiz.id} OnNextQuiz={OnNextQuiz} ind = {ind}/>
       )
     })
     return result;
-    
   }
   render(){
     var {quiz,numberQuiz} =  this.props;

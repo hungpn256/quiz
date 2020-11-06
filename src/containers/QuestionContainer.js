@@ -32,7 +32,7 @@ const mapStateToProps = (state)=>{
 }
 const mapDispatchToProps = (dispatch,props) =>{
     return {
-      OnNextQuiz:(id,res)=>{setTimeout(() => dispatch(NextQuiz(id,res)), 350);
+      OnNextQuiz:(id,res)=>{setTimeout(() => dispatch(NextQuiz(id,res)), 1500);
       }
     }
   }
