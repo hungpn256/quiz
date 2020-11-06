@@ -5,7 +5,7 @@ class Result extends Component {
     var {result,numberQuiz}= this.props;
     return (
         <h1 className="container result">{
-          result>0?"Chúc mừng bạn đúng " + result+"/"+numberQuiz:"Bạn gà vl"
+          result>0?"Chúc mừng bạn đúng " + result+"/"+numberQuiz:"Bạn không đúng câu nào :("
         }
         </h1>
     );
