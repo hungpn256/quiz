@@ -107,11 +107,12 @@ var questionReducer = (state = {
             var res =state.result;
             if(action.id  < quizQuestions.length){
                 ind = action.id;
-                end = false;
-                if(action.res){
-                    res++;
-                }
+                end = false;  
             }
+            if(action.res){
+                res++;
+            }
+            console.log(res)
             state = {
                 end:end,
                 ind:ind,
